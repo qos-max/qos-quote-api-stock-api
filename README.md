@@ -13,7 +13,7 @@
 - **skype**:[https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
 ## 1、快速开始-接入指南
 ### 1.1、注册key
-[1.1.1、http协议接入说明](#4.0、http协议接入说明)</br>
+[1.1.1、http协议接入说明](#40http协议接入说明)</br>
 [1.1.2、注册key](#4.1、注册一个新的Key)</br>
 
 使用邮箱注册后会得一个key，下面的步骤中将要使用。
