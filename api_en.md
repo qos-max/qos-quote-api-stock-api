@@ -84,7 +84,7 @@ When making requests, simply include the `key` in the request header, filling in
 
 #### 4.0.2 Limitations  
 The number of subscribed products and request frequency is limited based on the selected plan. By default, the limit is 10 products and 30 requests per minute. Contact customer service for adjustments according to your plan.  
-
+---
 ### 4.1 Register a New Key  
 - **Endpoint**: `/register`  
 - **Request Method**: `POST`  
@@ -796,5 +796,290 @@ The number of subscribed products and request frequency is limited based on the 
             ]
         }
     ]
+}
+```
+---
+## 5. WebSocket Protocol API Definition
+### 5.0. WebSocket Protocol Access Instructions
+When establishing the connection, you only need to put the API key in the request header by filling in the key field.
+- **WebSocket URL:** wss://api.qos.hk/ws
+#### 5.0.1. Request Header
+| Parameter | Type   | Description        |
+|-----------|--------|--------------------|
+| key       | string | API key for the request |
+
+#### 5.0.2. Limitations
+The number of subscribed products and the number of connections will be limited based on the subscription plan. By default, 10 products and 1 connection are allowed. You can contact customer service for adjustments based on your subscription plan. The frequency of subscription requests must not exceed 30 times per minute.
+
+### 5.1. Heartbeat
+A heartbeat should be sent every 20 seconds.
+#### 5.1.1. Sending Heartbeat
+```json
+{"type":"H"}
+```
+#### 5.1.2. Heartbeat Response
+```json
+{
+    "type": "H",
+    "msg": "OK",
+    "time": 1731640508
+}
+```
+### 5.2. Subscribe to Real-Time Snapshot of Trading Instruments
+#### 5.2.1. Sending Subscription Command
+| Field Name | Value                                                               |
+|------------|---------------------------------------------------------------------|
+| type       | Use "S" for subscription, "SC" for unsubscription.                   |
+| codes      | List of codes; refer to the example below for the specific format. |
+
+#### 5.2.2. Subscription Command Example
+```json
+{
+    "type": "S",
+    "codes": [
+        "US:AAPL",
+        "HK:700,9988",
+        "SH:600519,688981,601127,600938,601727,600837",
+        "SZ:002594"
+    ]
+}
+```
+#### 5.2.3. Subscription Command Response
+```json
+{
+    "type": "S",
+    "msg": "OK",
+    "time": 1731650860
+}
+```
+#### 5.2.4. Unsubscription Command Example
+```json
+{
+    "type": "SC",
+    "codes": [
+        "US:AAPL",
+        "HK:700,9988",
+        "SH:600519,688981,601127,600938,601727,600837",
+        "SZ:002594"
+    ]
+}
+```
+#### 5.2.5. Unsubscription Command Response
+```json
+{
+    "type": "SC",
+    "msg": "OK",
+    "time": 1731650871
+}
+```
+#### 5.2.6. Data Push
+| Field Name | Type   | Description                                                      |
+|------------|--------|------------------------------------------------------------------|
+| tp         | string | Data type, "S" indicates market snapshot data                    |
+| c          | string | Stock code                                                       |
+| lp         | string | Current price                                                    |
+| yp         | string | Previous day's closing price                                      |
+| o          | string | Opening price                                                    |
+| h          | string | Highest price                                                    |
+| l          | string | Lowest price                                                     |
+| ts         | integer| Timestamp                                                        |
+| v          | string | Volume                                                           |
+| t          | string | Transaction amount                                               |
+| s          | integer| Trading suspension status (0 indicates not suspended, 1 for suspended) |
+
+#### 5.2.7. Data Push Example
+```json
+{
+    "tp": "S",
+    "c": "SH:600938",
+    "lp": "25.92",
+    "yp": "26.15",
+    "o": "26.19",
+    "h": "26.19",
+    "l": "25.62",
+    "ts": 1731650869,
+    "v": "694420",
+    "t": "1793887058",
+    "s": 0
+}
+```
+### 5.3. Subscribe to Real-Time Trade Detail by Price Level
+#### 5.3.1. Sending Subscription Command
+| Field Name | Value                                                               |
+|------------|---------------------------------------------------------------------|
+| type       | Use "T" for subscription, "TC" for unsubscription.                  |
+| codes      | List of codes; refer to the example below for the specific format. |
+
+#### 5.3.2. Subscription Command Example
+```json
+{
+    "type": "T",
+    "codes": [
+        "US:AAPL",
+        "HK:700,9988",
+        "SH:600519,688981,601127,600938,601727,600837",
+        "SZ:002594"
+    ]
+}
+```
+#### 5.3.3. Subscription Command Response
+```json
+{
+    "type": "T",
+    "msg": "OK",
+    "time": 1731650860
+}
+```
+#### 5.3.4. Unsubscription Command Example
+```json
+{
+    "type": "TC",
+    "codes": [
+        "US:AAPL",
+        "HK:700,9988",
+        "SH:600519,688981,601127,600938,601727,600837",
+        "SZ:002594"
+    ]
+}
+```
+#### 5.3.5. Unsubscription Command Response
+```json
+{
+    "type": "TC",
+    "msg": "OK",
+    "time": 1731650871
+}
+```
+#### 5.3.6. Data Push
+| Field Name | Type   | Description                                                      |
+|------------|--------|------------------------------------------------------------------|
+| tp         | string | Data type, "T" indicates trade data                              |
+| c          | string | Stock code                                                       |
+| p          | string | Current price                                                    |
+| v          | string | Current transaction volume                                        |
+| ts         | integer| Timestamp                                                        |
+| d          | integer| Trade direction, refer to section 5.2 for details                |
+
+#### 5.3.7. Data Push Example
+```json
+{
+    "tp": "T",
+    "c": "SH:600837",
+    "p": 11.75,
+    "v": 71,
+    "ts": 1731651249,
+    "d": 2
+}
+```
+### 5.4. Subscribe to Real-Time Order Book Depth of Trading Instruments
+#### 5.4.1. Sending Subscription Command
+| Field Name | Value                                                               |
+|------------|---------------------------------------------------------------------|
+| type       | Use "D" for subscription, "DC" for unsubscription.                  |
+| codes      | List of codes; refer to the example below for the specific format. |
+
+#### 5.4.2. Subscription Command Example
+```json
+{
+    "type": "D",
+    "codes": [
+        "US:AAPL",
+        "HK:700,9988",
+        "SH:600519,688981,601127,600938,601727,600837",
+        "SZ:002594"
+    ]
+}
+```
+#### 5.4.3. Subscription Command Response
+```json
+{
+    "type": "D",
+    "msg": "OK",
+    "time": 1731650860
+}
+```
+#### 5.4.4. Unsubscription Command Example
+```json
+{
+    "type": "DC",
+    "codes": [
+        "US:AAPL",
+        "HK:700,9988",
+        "SH:600519,688981,601127,600938,601727,600837",
+        "SZ:002594"
+    ]
+}
+```
+#### 5.4.5. Unsubscription Command Response
+```json
+{
+    "type": "DC",
+    "msg": "OK",
+    "time": 1731650871
+}
+```
+#### 5.4.6. Data Push
+| Field Name | Type   | Description                                                      |
+|------------|--------|------------------------------------------------------------------|
+| tp         | string | Data type, "D" indicates order book depth data                   |
+| c          | string | Stock code                                                       |
+| b          | array  | Array of buy orders                                               |
+| > p        | string | Buy order price                                                   |
+| > v        | string | Buy order volume                                                  |
+| a          | array  | Array of sell orders                                              |
+| > p        | string | Sell order price                                                  |
+| > v        | string | Sell order volume                                                 |
+| ts         | integer| Timestamp                                                        |
+
+#### 5.4.7. Data Push Example
+```json
+{
+    "tp": "D",
+    "c": "SH:688981",
+    "b": [
+        {
+            "p": "96.66",
+            "v": "21"
+        },
+        {
+            "p": "96.65",
+            "v": "16"
+        },
+        {
+            "p": "96.63",
+            "v": "13"
+        },
+        {
+            "p": "96.61",
+            "v": "6"
+        },
+        {
+            "p": "96.6",
+            "v": "34"
+        }
+    ],
+    "a": [
+        {
+            "p": "96.67",
+            "v": "221"
+        },
+        {
+            "p": "96.7",
+            "v": "10"
+        },
+        {
+            "p": "96.71",
+            "v": "1542"
+        },
+        {
+            "p": "96.74",
+            "v": "62"
+        },
+        {
+            "p": "96.75",
+            "v": "915"
+        }
+    ],
+    "ts": 1731651419
 }
 ```
