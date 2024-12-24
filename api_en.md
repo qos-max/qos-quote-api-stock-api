@@ -267,3 +267,534 @@ The number of subscribed products and request frequency is limited based on the 
 }  
 ```  
 ---
+### 4.3. Get Real-Time Market Snapshot for Trading Instruments
+- **API Endpoint**: `/snapshot`
+- **Request Method**: `POST`
+- **API Description**: Get the real-time market snapshot for trading instruments.
+
+#### 4.3.1. Request Parameters
+
+| Parameter  | Type   | Required | Description                                         |
+|------------|--------|----------|-----------------------------------------------------|
+| `codes`    | array  | Yes      | List of trading instruments, see request example below for details.   |
+
+#### 4.3.2. Request Example
+```
+{
+    "codes": [
+        "US:AAPL,TSLA",
+        "HK:700",
+        "SH:600519"
+    ]
+}
+```
+
+#### 4.3.3. Response Fields
+
+| Field Name  | Type   | Description                                         |
+|-------------|--------|-----------------------------------------------------|
+| c           | string | Stock code                                          |
+| lp          | string | Current price                                       |
+| yp          | string | Previous closing price                              |
+| o           | string | Opening price                                       |
+| h           | string | Highest price                                       |
+| l           | string | Lowest price                                        |
+| ts          | integer| Timestamp                                           |
+| v           | string | Volume                                              |
+| t           | string | Transaction amount                                  |
+| s           | integer| Trading suspension status (0 for not suspended, 1 for suspended) |
+
+#### 4.3.4. Response Example
+```
+{
+  "msg": "OK",
+  "data": [
+    {
+      "c": "US:AAPL",
+      "e": "NASD",
+      "tc": "USD",
+      "nc": "Apple",
+      "ne": "AppleInc.",
+      "ls": 1,
+      "ts": 15115823000,
+      "os": 15091141884,
+      "ep": "6.2012",
+      "na": "3.7676",
+      "dy": "0.98"
+    },
+    {
+      "c": "HK:700",
+      "e": "SEHK",
+      "tc": "HKD",
+      "nc": "Tencent Holdings",
+      "ne": "TENCENT",
+      "ls": 100,
+      "ts": 9267359712,
+      "os": 9267359712,
+      "ep": "13.719",
+      "na": "101.7578",
+      "dy": "3.4558"
+    },
+    {
+      "c": "SH:600519",
+      "e": "SSE",
+      "tc": "CNY",
+      "nc": "Moutai",
+      "ne": "Moutai",
+      "ls": 100,
+      "ts": 1256197800,
+      "os": 1256197800,
+      "ep": "59.4923",
+      "na": "189.2293",
+      "dy": "49.982"
+    }
+  ]
+}
+```
+
+---
+### 4.4. Get Real-Time Latest Order Book Depth for Trading Instruments
+- **API Endpoint**: `/depth`
+- **Request Method**: `POST`
+- **API Description**: Get the real-time latest order book depth for trading instruments.
+
+#### 4.4.1. Request Parameters
+
+| Parameter  | Type   | Required | Description                                         |
+|------------|--------|----------|-----------------------------------------------------|
+| `codes`    | array  | Yes      | List of trading instruments, see request example below for details.   |
+
+#### 4.4.2. Request Example
+```
+{
+    "codes": [
+        "US:AAPL,TSLA",
+        "HK:700",
+        "SH:600519"
+    ]
+}
+```
+
+#### 4.4.3. Response Fields
+
+| Field Name  | Type   | Description                                         |
+|-------------|--------|-----------------------------------------------------|
+| c           | string | Stock code                                          |
+| b           | array  | Array of buy orders                                  |
+| > p         | string | Buy order price                                      |
+| > v         | string | Buy order volume                                     |
+| a           | array  | Array of sell orders                                 |
+| > p         | string | Sell order price                                     |
+| > v         | string | Sell order volume                                    |
+| ts          | integer| Timestamp                                           |
+
+#### 4.4.4. Response Example
+```
+{
+  "msg": "OK",
+  "data": [
+    {
+      "c": "US:AAPL",
+      "b": [
+        { "p": "224.42", "v": "100" }
+      ],
+      "a": [
+        { "p": "224.74", "v": "20" }
+      ],
+      "ts": 1731293478
+    },
+    {
+      "c": "US:TSLA",
+      "b": [
+        { "p": "295.8", "v": "5" }
+      ],
+      "a": [
+        { "p": "295.9", "v": "130" }
+      ],
+      "ts": 1731293478
+    },
+    {
+      "c": "SH:600519",
+      "b": [
+        { "p": "1593.01", "v": "1" },
+        { "p": "1593", "v": "5" }
+      ],
+      "a": [
+        { "p": "1593.02", "v": "1" },
+        { "p": "1594", "v": "6" }
+      ],
+      "ts": 1731293478
+    }
+  ]
+}
+```
+
+---
+### 4.5. Get Real-Time Latest Trade Details for Trading Instruments
+- **API Endpoint**: `/trade`
+- **Request Method**: `POST`
+- **API Description**: Get real-time latest trade details for trading instruments.
+
+#### 4.5.1. Request Parameters
+
+| Parameter  | Type   | Required | Description                                         |
+|------------|--------|----------|-----------------------------------------------------|
+| `codes`    | array  | Yes      | List of trading instruments, see request example below for details.   |
+| `count`    | integer| Yes      | Number of recent trades requested (must not exceed 50) |
+
+#### 4.5.2. Request Example
+```
+{
+    "codes": [
+        "US:AAPL",
+        "HK:700",
+        "SH:600519,688981,601127,600938,601727,600837,688185",
+        "SZ:002594"
+    ],
+    "count": 2
+}
+```
+
+#### 4.5.3. Response Fields
+
+| Field Name  | Type   | Description                                         |
+|-------------|--------|-----------------------------------------------------|
+| c           | string | Stock code                                          |
+| p           | string | Current price                                       |
+| v           | string | Current transaction volume                           |
+| ts          | integer| Timestamp                                           |
+| d           | integer| Trade direction, see section 5.2 for details.       |
+
+#### 4.5.4. Response Example
+```
+{
+    "msg": "OK",
+    "data": [
+        {
+            "c": "SH:688185",
+            "p": 66.99,
+            "v": 2,
+            "ts": 1731635481,
+            "d": 2
+        },
+        {
+            "c": "SH:600519",
+            "p": 1555.8,
+            "v": 74,
+            "ts": 1731635489,
+            "d": 2
+        },
+        {
+            "c": "SH:601127",
+            "p": 135.81,
+            "v": 327,
+            "ts": 1731635489,
+            "d": 0
+        },
+        {
+            "c": "SH:688981",
+            "p": 96.25,
+            "v": 364,
+            "ts": 1731635491,
+            "d": 2
+        },
+        {
+            "c": "SH:600938",
+            "p": 25.85,
+            "v": 75,
+            "ts": 1731635488,
+            "d": 1
+        },
+        {
+            "c": "SH:601727",
+            "p": 9.01,
+            "v": 8414,
+            "ts": 1731635491,
+            "d": 1
+        },
+        {
+            "c": "SH:600837",
+            "p": 11.92,
+            "v": 510,
+            "ts": 1731635490,
+            "d": 2
+        },
+        {
+            "c": "SZ:002594",
+            "p": 285.88,
+            "v": 59,
+            "ts": 1731635493,
+            "d": 0
+        }
+    ]
+}
+```
+
+---
+### 4.6. Get K-Line for Trading Instruments
+- **API Endpoint**: `/kline`
+- **Request Method**: `POST`
+- **API Description**: Get K-line for trading instruments, starting from the most recent and moving backward for a specified number of K-lines.
+
+#### 4.6.1. Request Parameters
+
+| Parameter  | Type   | Required | Description                                         |
+|------------|--------|----------|-----------------------------------------------------|
+| c          | string | Stock codes, multiple codes separated by commas |
+| co         | integer| Count: number of K-lines requested |
+| a          | integer| Adjustment type: 0 for no adjustment, 1 for forward adjustment |
+| kt         | integer| K-line type, refer to section 5.1 for K-line type definition |
+
+#### 4.6.2. Request Example
+```
+{
+    "kline_reqs": [
+        {
+            "c": "US:AAPL,TSLA",
+            "co": 2,
+            "a": 0,
+            "kt": 1
+        },
+        {
+            "c": "HK:700",
+            "co": 2,
+            "a": 0,
+            "kt": 1
+        },{
+            "c": "SH:600519",
+            "co": 2,
+            "a": 0,
+            "kt": 2001
+        }
+    ]
+}
+```
+
+#### 4.6.3. Response Fields
+
+| Field Name  | Type   | Description                                         |
+|-------------|--------|-----------------------------------------------------|
+| c           | string | Stock code                                          |
+| k           | array  | Array of K-line data                                |
+| > o         | string | Opening price                                       |
+| > cl        | string | Closing price                                       |
+| > h         | string | Highest price                                       |
+| > l         | string | Lowest price                                        |
+| > v         | string | Volume                                              |
+| > ts        | integer| Timestamp                                           |
+| > kt        | integer| K-line type, refer to section 5.1 for K-line type definition |
+
+#### 4.6.4. Response Example
+```
+{
+    "msg": "OK",
+    "data": [
+        {
+            "c": "SH:600519",
+            "k": [
+                {
+                    "c": "SH:600519",
+                    "o": "1731.2",
+                    "cl": "1726",
+                    "h": "1935",
+                    "l": "1616.25",
+                    "v": "5627550",
+                    "ts": 1672502400,
+                    "kt": 2001
+                },
+                {
+                    "c": "SH:600519",
+                    "o": "1715",
+                    "cl": "1585.58",
+                    "h": "1910",
+                    "l": "1245.83",
+                    "v": "7147731",
+                    "ts": 1704038400,
+                    "kt": 2001
+                }
+            ]
+        },
+        {
+            "c": "US:TSLA",
+            "k": [
+                {
+                    "c": "US:TSLA",
+                    "o": "330.32",
+                    "cl": "330.19",
+                    "h": "330.79",
+                    "l": "329.957",
+                    "v": "578346",
+                    "ts": 1731531540,
+                    "kt": 1
+                },
+                {
+                    "c": "US:TSLA",
+                    "o": "330.27",
+                    "cl": "330.24",
+                    "h": "330.29",
+                    "l": "330.24",
+                    "v": "2404646",
+                    "ts": 1731531600,
+                    "kt": 1
+                }
+            ]
+        },
+        {
+            "c": "US:AAPL",
+            "k": [
+                {
+                    "c": "US:AAPL",
+                    "o": "225.11",
+                    "cl": "225.07",
+                    "h": "225.32",
+                    "l": "225",
+                    "v": "813271",
+                    "ts": 1731531540,
+                    "kt": 1
+                },
+                {
+                    "c": "US:AAPL",
+                    "o": "225.12",
+                    "cl": "225.12",
+                    "h": "225.12",
+                    "l": "225.12",
+                    "v": "8870001",
+                    "ts": 1731531600,
+                    "kt": 1
+                }
+            ]
+        },
+        {
+            "c": "HK:700",
+            "k": [
+                {
+                    "c": "HK:700",
+                    "o": "411.4",
+                    "cl": "411.6",
+                    "h": "411.6",
+                    "l": "411.2",
+                    "v": "51115",
+                    "ts": 1731553860,
+                    "kt": 1
+                },
+                {
+                    "c": "HK:700",
+                    "o": "411.6",
+                    "cl": "411.4",
+                    "h": "411.8",
+                    "l": "411.4",
+                    "v": "84400",
+                    "ts": 1731553920,
+                    "kt": 1
+                }
+            ]
+        }
+    ]
+}
+```
+
+---
+### 4.7. Get Historical K-Line for Trading Instruments
+- **API Endpoint**: `/history`
+- **Request Method**: `POST`
+- **API Description**: Get historical K-line for trading instruments, starting from the specified end time and moving backward for a specified number of K-lines.
+
+#### 4.7.1. Request Parameters
+
+| Parameter  | Type   | Required | Description                                         |
+|------------|--------|----------|-----------------------------------------------------|
+| c          | string | Stock codes, multiple codes separated by commas |
+| e          | integer| Request end timestamp (in seconds)                 |
+| co         | integer| Count: number of K-lines requested |
+| a          | integer| Adjustment type: 0 for no adjustment, 1 for forward adjustment |
+| kt         | integer| K-line type, refer to section 5.1 for K-line type definition |
+
+#### 4.7.2. Request Example
+```
+{
+    "kline_reqs": [
+        {
+            "c": "US:AAPL,TSLA",
+            "e": 1722441600,
+            "co": 1,
+            "a": 0,
+            "kt": 1001
+        },
+        {
+            "c": "HK:700",
+            "e": 1722441600,
+            "co": 1,
+            "a": 0,
+            "kt": 2001
+        }
+    ]
+}
+```
+
+#### 4.7.3. Response Fields
+
+| Field Name  | Type   | Description                                         |
+|-------------|--------|-----------------------------------------------------|
+| c           | string | Stock code                                          |
+| k           | array  | Array of K-line data                                |
+| > o         | string | Opening price                                       |
+| > cl        | string | Closing price                                       |
+| > h         | string | Highest price                                       |
+| > l         | string | Lowest price                                        |
+| > v         | string | Volume                                              |
+| > ts        | integer| Timestamp                                           |
+| > kt        | integer| K-line type, refer to section 5.1 for K-line type definition |
+
+#### 4.7.4. Response Example
+```
+{
+    "msg": "OK",
+    "data": [
+        {
+            "c": "US:AAPL",
+            "k": [
+                {
+                    "c": "US:AAPL",
+                    "o": "224.01",
+                    "cl": "225.12",
+                    "h": "226.65",
+                    "l": "222.76",
+                    "v": "48566217",
+                    "ts": 1731474000,
+                    "kt": 1001
+                }
+            ]
+        },
+        {
+            "c": "US:TSLA",
+            "k": [
+                {
+                    "c": "US:TSLA",
+                    "o": "335.85",
+                    "cl": "330.24",
+                    "h": "344.6",
+                    "l": "322.5",
+                    "v": "125405599",
+                    "ts": 1731474000,
+                    "kt": 1001
+                }
+            ]
+        },
+        {
+            "c": "HK:700",
+            "k": [
+                {
+                    "c": "HK:700",
+                    "o": "300",
+                    "cl": "410.8",
+                    "h": "482.4",
+                    "l": "260.2",
+                    "v": "4682849510",
+                    "ts": 1704038400,
+                    "kt": 2001
+                }
+            ]
+        }
+    ]
+}
+```
