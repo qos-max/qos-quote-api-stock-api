@@ -40,3 +40,6 @@
 ### [5.2、订阅交易品种的实时快照](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#52%E8%AE%A2%E9%98%85%E4%BA%A4%E6%98%93%E5%93%81%E7%A7%8D%E7%9A%84%E5%AE%9E%E6%97%B6%E5%BF%AB%E7%85%A7)
 ### [5.3、订阅交易品种的实时逐口成交明细](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#53%E8%AE%A2%E9%98%85%E4%BA%A4%E6%98%93%E5%93%81%E7%A7%8D%E7%9A%84%E5%AE%9E%E6%97%B6%E9%80%90%E5%8F%A3%E6%88%90%E4%BA%A4%E6%98%8E%E7%BB%86)
 ### [5.4、订阅交易品种的实时盘口](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#54%E8%AE%A2%E9%98%85%E4%BA%A4%E6%98%93%E5%93%81%E7%A7%8D%E7%9A%84%E5%AE%9E%E6%97%B6%E7%9B%98%E5%8F%A3)
+## 联系作者：
+- **telegram**: [https://t.me/qos_max](https://t.me/qos_max)
+- **skype**:[https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
