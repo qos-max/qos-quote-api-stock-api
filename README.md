@@ -1,5 +1,5 @@
 # QOS报价海洋系统(Quote Ocean System)-欢迎对接使用
-报价海洋系统目前提供：全港，全美，沪深等股票的实时报价，实时K线，历史K线数据等，欢迎免费试用及联系作者。
+报价海洋系统目前提供：全港，全美，沪深等股票的实时报价，实时K线，历史K线数据等，欢迎免费试用及联系作者,现提供免费试用对接。
 - **版本**：V1.0.1
 - **作者**：Max
 - **更新时间**：2024-12-24
@@ -11,7 +11,7 @@
 - **请求方式**：所有http请求统一为POST方法。
 ## 联系作者：
 - **telegram**: [https://t.me/qos_max](https://t.me/qos_max)
-- **skype**:[https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
+- **skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
 # 目录
 ## [1、免费快速开始-接入指南](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#1%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97)
 ### [1.1、注册key](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#11%E6%B3%A8%E5%86%8Ckey)
@@ -42,4 +42,4 @@
 ### [5.4、订阅交易品种的实时盘口](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#54%E8%AE%A2%E9%98%85%E4%BA%A4%E6%98%93%E5%93%81%E7%A7%8D%E7%9A%84%E5%AE%9E%E6%97%B6%E7%9B%98%E5%8F%A3)
 ## 联系作者：
 - **telegram**: [https://t.me/qos_max](https://t.me/qos_max)
-- **skype**:[https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
+- **skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
