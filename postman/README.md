@@ -7,7 +7,7 @@
 - **postman项目连接：** [https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview](https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview)
 可以直接使用postman工具进行fork使用。
 ### 1.2、通过Json文件导入到PostMan
-在json_file目录的json文件可以直接导入到postman中供您使用体验。
+在[json_file](https://github.com/qos-max/quote-ocean-system/tree/main/postman/json_file)目录的json文件可以直接导入到postman中供您使用体验。
 ## 二、websocket接口
 ### 2.1、直接Fork
 - **postman项目连接：** [https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview](https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview)
@@ -24,12 +24,12 @@
 #### 2.2.4、添加websocket请求用到的参数：
 - websocket地址：wss://api.qos.hk/ws
 - key:通过调用注册Key接口获取，注意保存获取的key信息。
-- message-发送心跳-Heartbeat:
-  ```json
-  {"type":"H"}
-  ```
-- message-订阅实时快照-Subscribe Real-Time Snapshot:
-  ```json
+- message-发送心跳:
+```json
+{"type":"H"}
+```
+- message-订阅实时快照t:
+```json
 {
     "type": "S",
     "codes": [
@@ -39,4 +39,29 @@
         "SZ:002594"
     ]
 }
-  ```
+```
+- message-订阅实时交易明细:
+```json
+{
+    "type": "T",
+    "codes": [
+        "US:AAPL",
+        "HK:700,9988",
+        "SH:600519,688981,601127,600938,601727,600837",
+        "SZ:002594"
+    ]
+}
+```
+- message-订阅实时盘口:
+```json
+{
+    "type": "D",
+    "codes": [
+        "US:AAPL",
+        "HK:700,9988",
+        "SH:600519,688981,601127,600938,601727,600837",
+        "SZ:002594"
+    ]
+}
+```
+到此已经添加完成可以请求到数据了。但是postman并不会为websocket自动生成示例代码，关于websocket的示例代码会另外单独提供。
