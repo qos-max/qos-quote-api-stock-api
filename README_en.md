@@ -1,8 +1,7 @@
 **[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/README.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/README_en.md)**
 # QOS Quote Ocean System - Welcome to Connect and Use
 The Quote Ocean System currently provides: real-time quotes, real-time K-line, historical K-line data for stocks in Hong Kong, the U.S., and Shanghai-Shenzhen. Free trials and integration support are available. Feel free to contact the author.
-
-- **Version**: V1.0.1  
+ 
 - **Author**: Max  
 - **Last Updated**: 2024-12-24  
 - **HTTP Base URL**: `https://api.qos.hk`  
