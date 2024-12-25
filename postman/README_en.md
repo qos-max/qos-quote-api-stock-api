@@ -9,7 +9,7 @@ Register a key -> Request HTTP interfaces or subscribe to WebSocket real-time ma
 - **PostMan Project Link:** </br>[https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview](https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview)</br>
 You can directly fork and use it with the PostMan tool.
 
-### 1.2 Import JSON File into PostMan
+### 1.2 Or import JSON File into PostMan
 The JSON files in the [json_file](https://github.com/qos-max/quote-ocean-system/tree/main/postman/json_file) directory can be directly imported into PostMan for use and experience.</br>
 - First, import the [RegisterKey.postman_collection.json](https://github.com/qos-max/quote-ocean-system/blob/main/postman/json_file/RegisterKey.postman_collection.json) file to register the key.</br>
 - Then, import the [API-http.postman_collection.json](https://github.com/qos-max/quote-ocean-system/blob/main/postman/json_file/API-http.postman_collection.json) file to directly request data.</br>
@@ -21,7 +21,7 @@ The JSON files in the [json_file](https://github.com/qos-max/quote-ocean-system/
 - **PostMan Project Link:** </br>[https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview](https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview)</br>
 You can directly fork and use it with the PostMan tool.
 
-### 2.2 Manually Add to PostMan
+### 2.2 Or manually Add to PostMan
 Below are the steps to manually add the QOS Quotation System WebSocket in PostMan:
 
 #### 2.2.1 Add a Collection Named `API-WebSocket`, and select the WebSocket Basics template, as shown below:
