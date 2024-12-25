@@ -38,7 +38,7 @@ Click on the three dots (...) next to the newly created `API-WebSocket` collecti
 
 #### 2.2.4 Add Parameters for the WebSocket Request
 - **WebSocket Address:** wss://api.qos.hk/ws
-- **Key:** Obtain the key through the `Register Key` API. Be sure to save the retrieved key information.
+- **Key:** Obtain the key through the [Register Key](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#41-register-a-new-key) API. Be sure to save the retrieved key information.
 - **Message - Send Heartbeat:**
 ```json
 {"type":"H"}
