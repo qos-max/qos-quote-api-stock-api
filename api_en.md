@@ -2,7 +2,6 @@
 # QOS Quote Ocean System API Documentation
 The Quote Ocean System currently provides: real-time quotes, real-time K-line, and historical K-line data for Hong Kong, US, and Chinese stocks. Free trial access is available—feel free to contact the author.
 
-- **Version**: V1.0.0  
 - **Author**: Max  
 - **Last Updated**: 2024-12-16  
 - **HTTP Base URL**: `https://api.qos.hk`  
@@ -804,7 +803,7 @@ The number of subscribed products and request frequency is limited based on the 
 ---
 ## 5. WebSocket Protocol API Definition
 ### 5.0. WebSocket Protocol Access Instructions
-When establishing the connection, you only need to put the API key in the request header by filling in the key field.
+When establishing the connection, you only need to include the API key in the request header by filling in the key field. Once the connection is established, you can start sending heartbeats, subscribing to real-time snapshots, real-time quotes, and real-time transaction prices.
 - **WebSocket URL:** wss://api.qos.hk/ws
 #### 5.0.1. Request Header
 | Parameter | Type   | Description        |
