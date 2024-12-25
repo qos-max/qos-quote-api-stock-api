@@ -4,7 +4,7 @@
 注册key->请求http接口或者订阅websocket实时行情报价。</br>
 ## 一、http接口
 ### 1.1、直接Fork
-- **postman项目连接：** [https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview](https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview)
+- **postman项目连接：** </br> [https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview](https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview) </br>
 可以直接使用postman工具进行fork使用。
 ### 1.2、通过Json文件导入到PostMan
 在[json_file](https://github.com/qos-max/quote-ocean-system/tree/main/postman/json_file)目录的json文件可以直接导入到postman中供您使用体验。</br>
