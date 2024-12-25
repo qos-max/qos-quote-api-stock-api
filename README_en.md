@@ -11,6 +11,8 @@ The Quote Ocean System currently provides: real-time quotes, real-time K-line, h
 - **Format**: All requests and responses are in JSON format  
 - **Request Method**: All HTTP requests are unified as POST  
 
+[Use PostMan to Quickly Experience the QOS Quotation System](https://github.com/qos-max/quote-ocean-system/blob/main/postman/README_en.md)
+
 ## Contact the Author:
 - **Telegram**: [https://t.me/qos_max](https://t.me/qos_max)  
 - **Skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)  
