@@ -1,3 +1,4 @@
+**[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/postman/README.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/postman/README_en.md)**
 # Use PostMan to Quickly Experience the QOS Quotation System
 Once you use PostMan, you can directly request access to data. PostMan also automatically generates related invocation examples.</br>
 Quick start process:</br>
