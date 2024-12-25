@@ -1,9 +1,28 @@
 # 使用PostMan快速体验QOS报价系统
+一旦您使用了postman里面就可以直接请求访问到数据。并且postman自动生成了相关的调用示例。</br>
+简单入门流程：</br>
+注册key->请求http接口或者订阅websocket实时行情报价。</br>
+## 一、http接口
+### 1.1、直接Fork
+- **postman项目连接：** [https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview](https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview)
+可以直接使用postman工具进行fork使用。
+### 1.2、通过Json文件导入到PostMan
 在json_file目录的json文件可以直接导入到postman中供您使用体验。
-postman项目连接：https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview
-一旦您使用了postman里面就可以直接请求访问到数据。并且postman自动生成了相关的调用示例。
-简单入门流程：注册key->请求http接口或者订阅websocket实时行情报价。
-
-postman目前并没有提供websocket的自动生成示例代码，websocket的示例代码会另外单独提供。
-下面介绍在postman中添加QOS报价系统的websocket的步骤方法：
+## 二、websocket接口
+### 2.1、直接Fork
+- **postman项目连接：** [https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview](https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview)
+可以直接使用postman工具进行fork使用。
+### 2.2、手动添加到PostMan中
+下面介绍在postman中手动添加QOS报价系统的websocket的步骤方法：
+#### 2.2.1、添加一个collections模板选择websocket basics,如下图：
 ![image](https://github.com/user-attachments/assets/10b9993b-ea5a-4ada-b180-a5f2a9bd88e5)
+#### 2.2.2、添加一个websocket请求，点刚才添加的websocket basicw的collections，后面三个...，如下图，选择添加Websocket的请求。
+![image](https://github.com/user-attachments/assets/e0410015-1971-4100-b3b5-454d3a95d1c1)
+#### 2.2.3、添加websocket请求的细节：
+![image](https://github.com/user-attachments/assets/36214d69-359d-46d1-b06a-0fa2eb073a04)
+![image](https://github.com/user-attachments/assets/3187da31-a4ff-4754-a76e-1fabefc4a3f6)
+#### 2.2.4、添加websocket请求用到的参数：
+- websocket地址：wss://api.qos.hk/ws
+- key:通过调用注册Key接口获取，注意保存获取的key信息。
+- message:
+-- 心跳
