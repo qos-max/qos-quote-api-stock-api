@@ -17,28 +17,28 @@ The Quote Ocean System currently provides: real-time quotes, real-time K-line, a
 
 ## 1. Quick Start - Integration Guide
 ### 1.1 Register a Key
-[1.1.1 HTTP Protocol Access Instructions](#40http-protocol-access-instructions)  
-[1.1.2 Register a Key](#41register-a-new-key)  
+[1.1.1 HTTP Protocol Access Instructions](#40-http-protocol-access-description)  
+[1.1.2 Register a Key](#41-register-a-new-key)  
 
 After registering with your email, you will receive key-related information. Please keep it safe, as it will be used in subsequent steps.  
 
 ### 1.2 Request HTTP API
 Include the key in the request header by filling the `key` field. Then, use the parameters defined for each HTTP interface to fetch the data.  
-[1.2.1 HTTP Protocol Access Instructions](#40http-protocol-access-instructions)  
-[1.2.2 Retrieve Basic Information for Trading Instruments](#42retrieve-basic-information-for-trading-instruments)  
-[1.2.3 Retrieve Real-Time Quote Snapshots of Trading Instruments](#43retrieve-real-time-quote-snapshots-of-trading-instruments)  
-[1.2.4 Retrieve Real-Time Latest Order Book Depth of Trading Instruments](#44retrieve-real-time-latest-order-book-depth-of-trading-instruments)  
-[1.2.5 Retrieve Real-Time Trade Details of Trading Instruments](#45retrieve-real-time-trade-details-of-trading-instruments)  
-[1.2.6 Retrieve K-Line Data of Trading Instruments](#46retrieve-k-line-data-of-trading-instruments)  
-[1.2.7 Retrieve Historical K-Line Data of Trading Instruments](#47retrieve-historical-k-line-data-of-trading-instruments)  
+[1.2.1 HTTP Protocol Access Instructions](#40-http-protocol-access-description)  
+[1.2.2 Retrieve Basic Information for Trading Instruments](#42-retrieve-basic-instrument-information)  
+[1.2.3 Retrieve Real-Time Quote Snapshots of Trading Instruments](#43-get-real-time-market-snapshot-for-trading-instruments)  
+[1.2.4 Retrieve Real-Time Latest Order Book Depth of Trading Instruments](#44-get-real-time-latest-order-book-depth-for-trading-instruments)  
+[1.2.5 Retrieve Real-Time Trade Details of Trading Instruments](#45-get-real-time-latest-trade-details-for-trading-instruments)  
+[1.2.6 Retrieve K-Line Data of Trading Instruments](#46-get-k-line-for-trading-instruments)  
+[1.2.7 Retrieve Historical K-Line Data of Trading Instruments](#47-get-historical-k-line-for-trading-instruments)  
 
 ### 1.3 Subscribe to WebSocket Real-Time Data API
 Include the key in the request header by filling the `key` field. Then, establish a WebSocket connection, send subscription commands, and maintain the heartbeat to receive real-time quotes.  
-[1.3.1 WebSocket Protocol Access Instructions](#50websocket-protocol-access-instructions)  
-[1.3.2 Heartbeat](#51heartbeat)  
-[1.3.3 Subscribe to Real-Time Snapshots of Trading Instruments](#52subscribe-to-real-time-snapshots-of-trading-instruments)  
-[1.3.4 Subscribe to Real-Time Trade Details of Trading Instruments](#53subscribe-to-real-time-trade-details-of-trading-instruments)  
-[1.3.5 Subscribe to Real-Time Order Book of Trading Instruments](#54subscribe-to-real-time-order-book-of-trading-instruments)  
+[1.3.1 WebSocket Protocol Access Instructions](#50-websocket-protocol-access-instructions)  
+[1.3.2 Heartbeat](#51-heartbeat)  
+[1.3.3 Subscribe to Real-Time Snapshots of Trading Instruments](#52-subscribe-to-real-time-snapshot-of-trading-instruments)  
+[1.3.4 Subscribe to Real-Time Trade Details of Trading Instruments](#53-subscribe-to-real-time-trade-detail-by-price-level)  
+[1.3.5 Subscribe to Real-Time Order Book of Trading Instruments](#54-subscribe-to-real-time-order-book-depth-of-trading-instruments)  
 
 ## 2. Enumeration Definitions
 ### 2.1 K-Line Types
