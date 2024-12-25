@@ -6,3 +6,4 @@ postman项目连接：https://www.postman.com/telecoms-cosmonaut-98667288/qos-us
 
 postman目前并没有提供websocket的自动生成示例代码，websocket的示例代码会另外单独提供。
 下面介绍在postman中添加QOS报价系统的websocket的步骤方法：
+![image](https://github.com/user-attachments/assets/10b9993b-ea5a-4ada-b180-a5f2a9bd88e5)
