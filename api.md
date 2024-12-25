@@ -1,7 +1,6 @@
 **[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/api.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md)**
 # QOS报价海洋系统(Quote Ocean System)接口文档
 报价海洋系统目前提供：全港，全美，沪深等股票的实时报价，实时K线，历史K线数据等，欢迎免费试用及联系作者。
-- **版本**：V1.0.0
 - **作者**：Max
 - **更新时间**：2024-12-16
 - **http基础URL**：`https://api.qos.hk`
@@ -771,7 +770,7 @@
 ---
 ## 5、websocket协议接口定义
 ### 5.0、websocket协议接入说明
-建立连接时只需要把请key放在请求头中，填充key字段就可以了。
+建立连接时只需要把请key放在请求头中，填充key字段就可以了，建立连接后就可以开始发送心跳，订阅实时快照，实时报价，实时成交价格了。
 - **websocket地址：** wss://api.qos.hk/ws
 #### 5.0.1、请求头
 | 参数 | 类型  | 描述         |
