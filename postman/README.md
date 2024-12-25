@@ -16,11 +16,11 @@
 可以直接使用postman工具进行fork使用。
 ### 2.2、手动添加到PostMan中
 下面介绍在postman中手动添加QOS报价系统的websocket的步骤方法：
-#### 2.2.1、添加一个collections，模板选择websocket basics,如下图：
+#### 2.2.1、添加一个collections叫做：API-WebSocket，模板选择websocket basics,如下图：
 ![image](https://github.com/user-attachments/assets/9c42d09b-3331-4381-8000-d41c3410553d)
 
 ![image](https://github.com/user-attachments/assets/10b9993b-ea5a-4ada-b180-a5f2a9bd88e5)
-#### 2.2.2、添加一个websocket请求，点刚才添加的websocket basicw的collections，后面三个...，如下图，选择添加Websocket的请求。
+#### 2.2.2、添加一个websocket请求，点击刚才添加的API-WebSocket后面三个...，如下图，选择添加Websocket的请求。
 ![image](https://github.com/user-attachments/assets/e0410015-1971-4100-b3b5-454d3a95d1c1)
 #### 2.2.3、添加websocket请求的细节：
 ![image](https://github.com/user-attachments/assets/36214d69-359d-46d1-b06a-0fa2eb073a04)
