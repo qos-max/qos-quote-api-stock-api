@@ -84,7 +84,9 @@ When making requests, simply include the `key` in the request header, filling in
 
 #### 4.0.2 Limitations  
 The number of subscribed products and request frequency is limited based on the selected plan. By default, the limit is 10 products and 30 requests per minute. Contact customer service for adjustments according to your plan.  
+
 ---
+
 ### 4.1 Register a New Key  
 - **Endpoint**: `/register`  
 - **Request Method**: `POST`  
