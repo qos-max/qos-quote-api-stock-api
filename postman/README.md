@@ -1,3 +1,4 @@
+**[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/postman/README.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/postman/README_en.md)**
 # 使用PostMan快速体验QOS报价系统
 一旦您使用了postman里面就可以直接请求访问到数据。并且postman自动生成了相关的调用示例。</br>
 简单入门流程：</br>
