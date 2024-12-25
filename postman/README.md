@@ -7,7 +7,7 @@
 ### 1.1、直接Fork
 - **postman项目连接：** </br> [https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview](https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview) </br>
 可以直接使用postman工具进行fork使用。
-### 1.2、通过Json文件导入到PostMan
+### 1.2、或者通过Json文件导入到PostMan
 在[json_file](https://github.com/qos-max/quote-ocean-system/tree/main/postman/json_file)目录的json文件可以直接导入到postman中供您使用体验。</br>
 - 先导入[RegisterKey.postman_collection.json](https://github.com/qos-max/quote-ocean-system/blob/main/postman/json_file/RegisterKey.postman_collection.json)文件，进行注册key。</br>
 - 再导入[API-http.postman_collection.json](https://github.com/qos-max/quote-ocean-system/blob/main/postman/json_file/API-http.postman_collection.json)文件进行直接请求数据。</br>
@@ -18,7 +18,7 @@
 ### 2.1、直接Fork
 - **postman项目连接：** </br>[https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview](https://www.postman.com/telecoms-cosmonaut-98667288/qos-us-hk-sh-sz-stock-realtime-quote-api/overview)</br>
 可以直接使用postman工具进行fork使用。
-### 2.2、手动添加到PostMan中
+### 2.2、或者手动添加到PostMan中
 下面介绍在postman中手动添加QOS报价系统的websocket的步骤方法：
 #### 2.2.1、添加一个collections叫做：API-WebSocket，模板选择websocket basics,如下图：
 ![image](https://github.com/user-attachments/assets/9c42d09b-3331-4381-8000-d41c3410553d)
