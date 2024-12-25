@@ -24,5 +24,19 @@
 #### 2.2.4、添加websocket请求用到的参数：
 - websocket地址：wss://api.qos.hk/ws
 - key:通过调用注册Key接口获取，注意保存获取的key信息。
-- message:
--- 心跳
+- message-发送心跳-Heartbeat:
+  ```json
+  {"type":"H"}
+  ```
+- message-订阅实时快照-Subscribe Real-Time Snapshot:
+  ```json
+{
+    "type": "S",
+    "codes": [
+        "US:AAPL",
+        "HK:700,9988",
+        "SH:600519,688981,601127,600938,601727,600837",
+        "SZ:002594"
+    ]
+}
+  ```
