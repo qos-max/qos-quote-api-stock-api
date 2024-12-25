@@ -1,3 +1,4 @@
+**[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/api.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md)**
 # QOS Quote Ocean System API Documentation
 The Quote Ocean System currently provides: real-time quotes, real-time K-line, and historical K-line data for Hong Kong, US, and Chinese stocks. Free trial access is available—feel free to contact the author.
 
