@@ -9,6 +9,9 @@
 - **错误码说明**：msg字段返回"OK"视为成功，非"OK"则是具体的错误描述
 - **格式**：所有请求和响应均为 JSON 格式。
 - **请求方式**：所有http请求统一为POST方法。
+
+[使用PostMan快速体验QOS报价系统](https://github.com/qos-max/quote-ocean-system/blob/main/postman/README.md)
+
 ## 联系作者：
 - **telegram**: [https://t.me/qos_max](https://t.me/qos_max)
 - **skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
