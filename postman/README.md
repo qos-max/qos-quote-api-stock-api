@@ -26,13 +26,13 @@
 ![image](https://github.com/user-attachments/assets/36214d69-359d-46d1-b06a-0fa2eb073a04)
 ![image](https://github.com/user-attachments/assets/3187da31-a4ff-4754-a76e-1fabefc4a3f6)
 #### 2.2.4、添加websocket请求用到的参数：
-- websocket地址：wss://api.qos.hk/ws
-- key:通过调用注册Key接口获取，注意保存获取的key信息。
-- message-发送心跳:
+- **websocket地址：** wss://api.qos.hk/ws
+- **key:** 通过调用注册Key接口获取，注意保存获取的key信息。
+- **message-发送心跳:**
 ```json
 {"type":"H"}
 ```
-- message-订阅实时快照t:
+- **message-订阅实时快照t:**
 ```json
 {
     "type": "S",
@@ -44,7 +44,7 @@
     ]
 }
 ```
-- message-订阅实时交易明细:
+- **message-订阅实时交易明细:**
 ```json
 {
     "type": "T",
@@ -56,7 +56,7 @@
     ]
 }
 ```
-- message-订阅实时盘口:
+- **message-订阅实时盘口:**
 ```json
 {
     "type": "D",
