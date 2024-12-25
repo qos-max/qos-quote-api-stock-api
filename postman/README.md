@@ -30,7 +30,7 @@
 ![image](https://github.com/user-attachments/assets/3187da31-a4ff-4754-a76e-1fabefc4a3f6)
 #### 2.2.4、添加websocket请求用到的参数：
 - **websocket地址：** wss://api.qos.hk/ws
-- **key:** 通过调用注册Key接口获取，注意保存获取的key信息。
+- **key:** 通过调用[注册Key](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#41%E6%B3%A8%E5%86%8C%E4%B8%80%E4%B8%AA%E6%96%B0%E7%9A%84Key)接口获取，注意保存获取的key信息。
 - **message-发送心跳:**
 ```json
 {"type":"H"}
