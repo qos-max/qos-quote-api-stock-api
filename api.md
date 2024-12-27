@@ -1,6 +1,6 @@
 **[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/api.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md)**
 # QOS行情API(Quote Ocean System)接口文档
-quote-ocean-system系统简称"qos行情api"，包括了港股实时API,美股实时API,A股实时API,采用REST API与websocket接口形式，非常容易接入。免费开源股票API、港股API、美股API、沪深股票API、A股API实时股票行情数据.QOS行情报价系统目前提供：全港，全美，沪深等股票的实时报价，实时K线，历史K线数据等，欢迎免费试用及联系作者,现提供免费试用对接。
+**quote-ocean-system系统简称"qos行情api"，包括了港股实时API,美股实时API,A股实时API,采用REST API与websocket接口形式，非常容易接入。免费开源股票API、港股API、美股API、沪深股票API、A股API实时股票行情数据.QOS行情报价系统目前提供：全港，全美，沪深等股票的实时报价，实时K线，历史K线数据等，欢迎免费试用及联系作者,现提供免费试用对接。**
 - **作者**：Max
 - **更新时间**：2024-12-16
 - **http基础URL**：`https://api.qos.hk`
