@@ -1,6 +1,6 @@
 **[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/api.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md)**
-# QOS Quote Ocean System API Documentation
-The Quote Ocean System currently provides: real-time quotes, real-time K-line, and historical K-line data for Hong Kong, US, and Chinese stocks. Free trial access is available—feel free to contact the author.
+# QOS Quote API(Quote Ocean System API) Documentation
+**The quote-ocean-system, abbreviated as "QOS Market Data API," includes real-time APIs for Hong Kong stocks, U.S. stocks, and A-shares. It utilizes REST API and WebSocket interfaces, making it very easy to integrate. This is a free and open-source stock API providing real-time stock data for Hong Kong stocks, U.S. stocks, and mainland China stocks (A-shares). The QOS Market Data System currently offers real-time quotes, real-time K-line, and historical K-line data for stocks across Hong Kong, the United States, and mainland China. Free trials and integration support are available—feel free to contact the author for further details.**
 
 - **Author**: Max  
 - **Last Updated**: 2024-12-16  
