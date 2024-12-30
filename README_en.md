@@ -15,7 +15,8 @@
 
 ## Contact the Author:
 - **Telegram**: [https://t.me/qos_max](https://t.me/qos_max)  
-- **Skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)  
+- **Skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
+- **telegram group**: [https://t.me/+3K5iqG1rV75jMjcx](https://t.me/+3K5iqG1rV75jMjcx)
 
 # Table of Contents
 
