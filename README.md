@@ -14,7 +14,7 @@
 ## [使用PostMan快速体验QOS报价系统](https://github.com/qos-max/quote-ocean-system/blob/main/postman/README.md)
 
 ## 联系作者：
-- **telegram**: [https://t.me/qos_max](https://t.me/qos_max)
+- **telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)
 - **skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
 - **telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
 # 目录
