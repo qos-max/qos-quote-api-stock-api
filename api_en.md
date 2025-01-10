@@ -12,7 +12,7 @@
 - **Request Method**: All HTTP requests use the POST method.  
 
 ## Contact the Author:
-- **Telegram**: [https://t.me/qos_max](https://t.me/qos_max)  
+- **Telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)  
 - **Skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)  
 
 ## 1. Quick Start - Integration Guide
