@@ -12,6 +12,8 @@
 ## 联系作者：
 - **telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)
 - **skype**:[https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
+- **telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
+  
 ## 1、快速开始-接入指南
 ### 1.1、注册key
 [1.1.1、http协议接入说明](#40http协议接入说明)</br>
