@@ -10,7 +10,7 @@
 - **格式**：所有请求和响应均为 JSON 格式。
 - **请求方式**：所有http请求统一为POST方法。
 ## 联系作者：
-- **telegram**: [https://t.me/qos_max](https://t.me/qos_max)
+- **telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)
 - **skype**:[https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
 ## 1、快速开始-接入指南
 ### 1.1、注册key
