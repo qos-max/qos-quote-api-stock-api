@@ -14,7 +14,7 @@
 [Use PostMan to Quickly Experience the QOS Quotation System](https://github.com/qos-max/quote-ocean-system/blob/main/postman/README_en.md)
 
 ## Contact the Author:
-- **Telegram**: [https://t.me/qos_max](https://t.me/qos_max)  
+- **Telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)  
 - **Skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
 - **telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
 
