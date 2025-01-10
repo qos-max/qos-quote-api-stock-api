@@ -16,7 +16,7 @@
 ## 联系作者：
 - **telegram**: [https://t.me/qos_max](https://t.me/qos_max)
 - **skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
-- **telegram group**: [https://t.me/+3K5iqG1rV75jMjcx](https://t.me/+3K5iqG1rV75jMjcx)
+- **telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
 # 目录
 ## [1、免费快速开始-接入指南](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#1%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B-%E6%8E%A5%E5%85%A5%E6%8C%87%E5%8D%97)
 ### [1.1、注册key](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#11%E6%B3%A8%E5%86%8Ckey)
