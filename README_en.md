@@ -16,7 +16,7 @@
 ## Contact the Author:
 - **Telegram**: [https://t.me/qos_max](https://t.me/qos_max)  
 - **Skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
-- **telegram group**: [https://t.me/+3K5iqG1rV75jMjcx](https://t.me/+3K5iqG1rV75jMjcx)
+- **telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
 
 # Table of Contents
 
