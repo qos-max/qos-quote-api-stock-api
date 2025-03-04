@@ -305,52 +305,110 @@ The number of subscribed products and request frequency is limited based on the 
 | v           | string | Volume                                              |
 | t           | string | Transaction amount                                  |
 | s           | integer| Trading suspension status (0 for not suspended, 1 for suspended) |
+| pq   | object | US stock pre-market snapshot data, see definition below |
+| aq   | object | US stock after-hours snapshot data, see definition below |
+| nq   | object | US stock night session snapshot data, see definition below |
+
+| Field Name | Type    | Description                              |
+|------------|--------|------------------------------------------|
+| lp         | string | Current price                           |
+| yp         | string | Previous closing price                 |
+| h          | string | Highest price                          |
+| l          | string | Lowest price                           |
+| ts         | integer| Timestamp                              |
+| v          | string | Trading volume                        |
+| t          | string | Trading amount                        |
 
 #### 4.3.4. Response Example
 ```
 {
-  "msg": "OK",
-  "data": [
-    {
-      "c": "US:AAPL",
-      "e": "NASD",
-      "tc": "USD",
-      "nc": "Apple",
-      "ne": "AppleInc.",
-      "ls": 1,
-      "ts": 15115823000,
-      "os": 15091141884,
-      "ep": "6.2012",
-      "na": "3.7676",
-      "dy": "0.98"
-    },
-    {
-      "c": "HK:700",
-      "e": "SEHK",
-      "tc": "HKD",
-      "nc": "Tencent Holdings",
-      "ne": "TENCENT",
-      "ls": 100,
-      "ts": 9267359712,
-      "os": 9267359712,
-      "ep": "13.719",
-      "na": "101.7578",
-      "dy": "3.4558"
-    },
-    {
-      "c": "SH:600519",
-      "e": "SSE",
-      "tc": "CNY",
-      "nc": "Moutai",
-      "ne": "Moutai",
-      "ls": 100,
-      "ts": 1256197800,
-      "os": 1256197800,
-      "ep": "59.4923",
-      "na": "189.2293",
-      "dy": "49.982"
-    }
-  ]
+    "msg": "OK",
+    "data": [
+        {
+            "c": "US:AAPL",
+            "lp": "238.03",
+            "yp": "241.84",
+            "o": "241.79",
+            "h": "244.027",
+            "l": "236.112",
+            "ts": 1741035600,
+            "v": "47183985",
+            "t": "11319574967",
+            "s": 0,
+            "pq": {
+                "lp": "238.06",
+                "ts": 1741084832,
+                "v": "29673",
+                "t": "7076551.6299999999",
+                "h": "239.24",
+                "l": "237.76",
+                "yp": "238.03"
+            },
+            "aq": {
+                "lp": "240.4",
+                "ts": 1741049997,
+                "v": "4867814",
+                "t": "1158971205.635999918",
+                "h": "240.495",
+                "l": "237.659",
+                "yp": "238.03"
+            }
+        },
+        {
+            "c": "US:BTOG",
+            "lp": "0.3193",
+            "yp": "0.182",
+            "o": "0.9497",
+            "h": "0.96",
+            "l": "0.235",
+            "ts": 1741035600,
+            "v": "292773019",
+            "t": "195842787",
+            "s": 0,
+            "pq": {
+                "lp": "0.4398",
+                "ts": 1741084836,
+                "v": "2065900",
+                "t": "1045727.045",
+                "h": "0.5898",
+                "l": "0.3882",
+                "yp": "0.3193"
+            },
+            "aq": {
+                "lp": "0.399",
+                "ts": 1741049999,
+                "v": "6388895",
+                "t": "2609760.0299999998",
+                "h": "0.4695",
+                "l": "0.2908",
+                "yp": "0.3193"
+            }
+        },
+        {
+            "c": "HK:700",
+            "lp": "491",
+            "yp": "483.2",
+            "o": "479",
+            "h": "493",
+            "l": "473.2",
+            "ts": 1741075712,
+            "v": "31124964",
+            "t": "15131838819",
+            "s": 0
+        },
+        {
+            "c": "SH:600519",
+            "lp": "1470.11",
+            "yp": "1487.02",
+            "o": "1485",
+            "h": "1486",
+            "l": "1465.21",
+            "ts": 1741071600,
+            "v": "25211",
+            "t": "3710675863",
+            "s": 0
+        }
+    ]
 }
 ```
 
