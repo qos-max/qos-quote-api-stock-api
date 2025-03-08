@@ -1,6 +1,12 @@
 **[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/api.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md)**
 # QOS Quote API(Quote Ocean System API) Documentation
-**The quote-ocean-system, abbreviated as "QOS Market Data API," includes real-time APIs for Hong Kong stocks, U.S. stocks, and A-shares. It utilizes REST API and WebSocket interfaces, making it very easy to integrate. This is a free and open-source stock API providing real-time stock data for Hong Kong stocks, U.S. stocks, and mainland China stocks (A-shares). The QOS Market Data System currently offers real-time quotes, real-time K-line, and historical K-line data for stocks across Hong Kong, the United States, and mainland China. Free trials and integration support are available—feel free to contact the author for further details.**
+**TThe quote-ocean-system (abbreviated as "QOS Market API") includes real-time APIs for Hong Kong stocks, U.S. stocks, A-shares, cryptocurrency quotes, and digital currency market data. It supports REST API and WebSocket interfaces, making integration extremely easy.
+
+QOS provides a free and open-source stock API, including real-time market data for Hong Kong stocks, U.S. stocks, A-shares, and Shanghai-Shenzhen stocks, as well as real-time cryptocurrency quotes and digital currency market data.
+
+Currently, the QOS Market Quotation System offers real-time quotes, real-time K-line, and historical K-line data for stocks across Hong Kong, the U.S., Shanghai, and Shenzhen, as well as cryptocurrencies (digital currencies).
+
+Free trial access is available—feel free to test it out and contact the author for integration support!**
 - **official website**：[https://qos.hk](https://qos.hk)
 - **Author**: Max  
 - **Last Updated**: 2024-12-16  
@@ -72,6 +78,7 @@ Include the key in the request header by filling the `key` field. Then, establis
 | HK          | Hong Kong Stocks | UTC+8 Morning Session: 9:30 AM - 12:00 PM</br>Afternoon Session: 1:00 PM - 4:00 PM |
 | SZ          | Shenzhen A-Shares | UTC+8 Morning Session: 9:30 AM - 11:30 AM</br>Afternoon Session: 1:00 PM - 3:00 PM |
 | SH          | Shanghai A-Shares | UTC+8 Morning Session: 9:30 AM - 11:30 AM</br>Afternoon Session: 1:00 PM - 3:00 PM |
+| CM          | cryptocurrency | 24h |
 ## 4. HTTP Protocol API Definition  
 ### 4.0 HTTP Protocol Access Description  
 When making requests, simply include the `key` in the request header, filling in the `key` field.  
@@ -199,7 +206,8 @@ The number of subscribed products and request frequency is limited based on the 
     "codes": [  
         "US:AAPL,TSLA",  
         "HK:700",  
-        "SH:600519"  
+        "SH:600519",
+        "CM:BTCUSDT"  
     ]  
 }  
 ```  
@@ -286,7 +294,8 @@ The number of subscribed products and request frequency is limited based on the 
     "codes": [
         "US:AAPL,TSLA",
         "HK:700",
-        "SH:600519"
+        "SH:600519",
+        "CM:BTCUSDT"
     ]
 }
 ```
@@ -430,7 +439,8 @@ The number of subscribed products and request frequency is limited based on the 
     "codes": [
         "US:AAPL,TSLA",
         "HK:700",
-        "SH:600519"
+        "SH:600519",
+        "CM:BTCUSDT"
     ]
 }
 ```
@@ -509,7 +519,8 @@ The number of subscribed products and request frequency is limited based on the 
         "US:AAPL",
         "HK:700",
         "SH:600519,688981,601127,600938,601727,600837,688185",
-        "SZ:002594"
+        "SZ:002594",
+        "CM:BTCUSDT"
     ],
     "count": 2
 }
@@ -613,18 +624,23 @@ The number of subscribed products and request frequency is limited based on the 
             "c": "US:AAPL,TSLA",
             "co": 2,
             "a": 0,
-            "kt": 1
+            "kt": 1001
         },
         {
             "c": "HK:700",
             "co": 2,
             "a": 0,
-            "kt": 1
+            "kt": 1001
         },{
             "c": "SH:600519",
             "co": 2,
             "a": 0,
-            "kt": 2001
+            "kt": 1001
+        },{
+            "c": "CM:BTCUSDT",
+            "co": 2,
+            "a": 0,
+            "kt": 1001
         }
     ]
 }
@@ -774,18 +790,11 @@ The number of subscribed products and request frequency is limited based on the 
 {
     "kline_reqs": [
         {
-            "c": "US:AAPL,TSLA",
+            "c": "CM:BTCUSDT",
             "e": 1722441600,
             "co": 1,
             "a": 0,
             "kt": 1001
-        },
-        {
-            "c": "HK:700",
-            "e": 1722441600,
-            "co": 1,
-            "a": 0,
-            "kt": 2001
         }
     ]
 }
@@ -811,47 +820,17 @@ The number of subscribed products and request frequency is limited based on the 
     "msg": "OK",
     "data": [
         {
-            "c": "US:AAPL",
+            "c": "CM:BTCUSDT",
             "k": [
                 {
-                    "c": "US:AAPL",
-                    "o": "224.01",
-                    "cl": "225.12",
-                    "h": "226.65",
-                    "l": "222.76",
-                    "v": "48566217",
-                    "ts": 1731474000,
+                    "c": "CM:BTCUSDT",
+                    "o": "66188.00000000",
+                    "cl": "64628.00000000",
+                    "h": "66849.24000000",
+                    "l": "64530.00000000",
+                    "v": "22625.43905000",
+                    "ts": 1722384000,
                     "kt": 1001
-                }
-            ]
-        },
-        {
-            "c": "US:TSLA",
-            "k": [
-                {
-                    "c": "US:TSLA",
-                    "o": "335.85",
-                    "cl": "330.24",
-                    "h": "344.6",
-                    "l": "322.5",
-                    "v": "125405599",
-                    "ts": 1731474000,
-                    "kt": 1001
-                }
-            ]
-        },
-        {
-            "c": "HK:700",
-            "k": [
-                {
-                    "c": "HK:700",
-                    "o": "300",
-                    "cl": "410.8",
-                    "h": "482.4",
-                    "l": "260.2",
-                    "v": "4682849510",
-                    "ts": 1704038400,
-                    "kt": 2001
                 }
             ]
         }
@@ -899,8 +878,9 @@ A heartbeat should be sent every 20 seconds.
     "codes": [
         "US:AAPL",
         "HK:700,9988",
-        "SH:600519,688981,601127,600938,601727,600837",
-        "SZ:002594"
+        "SH:600519,688981",
+        "SZ:002594",
+        "CM:BTCUSDT"
     ]
 }
 ```
@@ -920,7 +900,8 @@ A heartbeat should be sent every 20 seconds.
         "US:AAPL",
         "HK:700,9988",
         "SH:600519,688981,601127,600938,601727,600837",
-        "SZ:002594"
+        "SZ:002594",
+        "CM:BTCUSDT"
     ]
 }
 ```
@@ -977,8 +958,9 @@ A heartbeat should be sent every 20 seconds.
     "codes": [
         "US:AAPL",
         "HK:700,9988",
-        "SH:600519,688981,601127,600938,601727,600837",
-        "SZ:002594"
+        "SH:600519,688981",
+        "SZ:002594",
+        "CM:BTCUSDT"
     ]
 }
 ```
@@ -997,8 +979,9 @@ A heartbeat should be sent every 20 seconds.
     "codes": [
         "US:AAPL",
         "HK:700,9988",
-        "SH:600519,688981,601127,600938,601727,600837",
-        "SZ:002594"
+        "SH:600519,688981",
+        "SZ:002594",
+        "CM:BTCUSDT"
     ]
 }
 ```
@@ -1045,8 +1028,9 @@ A heartbeat should be sent every 20 seconds.
     "codes": [
         "US:AAPL",
         "HK:700,9988",
-        "SH:600519,688981,601127,600938,601727,600837",
-        "SZ:002594"
+        "SH:600519,688981",
+        "SZ:002594",
+        "CM:BTCUSDT"
     ]
 }
 ```
@@ -1065,8 +1049,9 @@ A heartbeat should be sent every 20 seconds.
     "codes": [
         "US:AAPL",
         "HK:700,9988",
-        "SH:600519,688981,601127,600938,601727,600837",
-        "SZ:002594"
+        "SH:600519,688981",
+        "SZ:002594",
+        "CM:BTCUSDT"
     ]
 }
 ```
