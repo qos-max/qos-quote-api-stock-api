@@ -8,7 +8,6 @@
 
 **Free trial access is available—feel free to test it out and contact the author for integration support!**
 - **official website**：[https://qos.hk](https://qos.hk)
-- **Author**: Max  
 - **Last Updated**: 2024-12-16  
 - **HTTP Base URL**: `https://api.qos.hk`  
 - **WebSocket URL**: `wss://api.qos.hk/ws`  
