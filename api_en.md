@@ -6,7 +6,7 @@
 
 **Currently, the QOS Market Quotation System offers real-time quotes, real-time K-line, and historical K-line data for stocks across Hong Kong, the U.S., Shanghai, and Shenzhen, as well as cryptocurrencies (digital currencies).**
 
-Free trial access is available—feel free to test it out and contact the author for integration support!**
+**Free trial access is available—feel free to test it out and contact the author for integration support!**
 - **official website**：[https://qos.hk](https://qos.hk)
 - **Author**: Max  
 - **Last Updated**: 2024-12-16  
