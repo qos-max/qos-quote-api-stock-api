@@ -20,6 +20,7 @@
 - **Telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)  
 - **Skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
 - **telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
+- **Email**:support@qos.hk
 
 ## 1. Quick Start - Integration Guide
 ### 1.1 Register a Key
