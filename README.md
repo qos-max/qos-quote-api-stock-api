@@ -5,13 +5,11 @@
 **QOS行情报价系统目前提供：全港，全美，沪深等股票和加密货币（数字币）的实时报价，实时K线，历史K线数据等，欢迎免费试用及联系作者,现提供免费试用对接。**
 - **官网**：[https://qos.hk](https://qos.hk)
 - **更新时间**：2025-3-15
-# 联系作者：
+## 联系作者：
 - **Email**: support@qos.hk
 - **Telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)
 - **Telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
-</br></br>
 # [使用PostMan快速体验QOS报价系统](https://github.com/qos-max/quote-ocean-system/blob/main/postman/README.md)
-</br></br>
 # 快速开始-接入指南
 ## 一、注册key
 访问官网快速注册key:
