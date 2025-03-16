@@ -43,6 +43,7 @@
 5.9、[请求交易品种的实时盘口](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#58请求交易品种的实时盘口)</br>
 5.10、[请求交易品种的K线](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#59请求交易品种的实时k线)</br>
 5.11、[请求交易品种的K线历史](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#510请求交易品种的k线历史)</br>
+5.12、[请求交易品种的基础信息](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#511请求交易品种的基础信息)</br>
 
 ## 联系作者：
 - **Email**: support@qos.hk
