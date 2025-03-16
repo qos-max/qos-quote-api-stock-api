@@ -1,63 +1,52 @@
 **[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/README.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/README_en.md)**
-# QOS Quote API(Quote Ocean System) - Welcome to Connect and Use
-**The quote-ocean-system (abbreviated as "QOS Market API") includes real-time APIs for Hong Kong stocks, U.S. stocks, A-shares, cryptocurrency quotes, and digital currency market data. It supports REST API and WebSocket interfaces, making integration extremely easy.**
-
-**QOS provides a free and open-source stock API, including real-time market data for Hong Kong stocks, U.S. stocks, A-shares, and Shanghai-Shenzhen stocks, as well as real-time cryptocurrency quotes and digital currency market data.**
-
-**Currently, the QOS Market Quotation System offers real-time quotes, real-time K-line, and historical K-line data for stocks across Hong Kong, the U.S., Shanghai, and Shenzhen, as well as cryptocurrencies (digital currencies).**
-
-**Free trial access is available—feel free to test it out and contact the author for integration support!**
-- **official website**：[https://qos.hk](https://qos.hk)
-- **Last Updated**: 2025-3-4
-- **HTTP Base URL**: `https://api.qos.hk`  
-- **WebSocket URL**: `wss://api.qos.hk/ws`  
-- **Authentication Method**: Add the `key` field in the request header  
-- **Error Code Description**: A `msg` field returning "OK" indicates success, while any other value provides specific error details  
-- **Format**: All requests and responses are in JSON format  
-- **Request Method**: All HTTP requests are unified as POST  
-
-[Use PostMan to Quickly Experience the QOS Quotation System](https://github.com/qos-max/quote-ocean-system/blob/main/postman/README_en.md)
-
+**[Simplified Chinese](https://github.com/qos-max/quote-ocean-system/blob/main/README.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/README_en.md)**
+# QOS Market API (Quote Ocean System) - Welcome to Integrate
+**The quote-ocean-system, abbreviated as "QOS Market API," includes real-time APIs for Hong Kong stocks, US stocks, A-shares, cryptocurrency real-time quotes, and digital currency real-time market data. It adopts REST API and WebSocket interfaces, making it very easy to integrate.**</br>
+**Free and open-source stock API, Hong Kong stock API, US stock API, Shanghai-Shenzhen stock API, A-share API for real-time stock market data, cryptocurrency real-time quotes, and digital currency real-time market data.**</br>
+**The QOS Market Quotation System currently provides real-time quotes, real-time K-lines, historical K-line data, etc., for all Hong Kong, US, and Shanghai-Shenzhen stocks, as well as cryptocurrencies (digital currencies). Welcome to try it for free and contact the author. Free trial integration is now available.**
+- **Official Website**: [https://qos.hk](https://qos.hk)
+- **Last Updated**: 2025-3-15
 ## Contact the Author:
-- **Telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)  
-- **Skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
-- **Telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
 - **Email**: support@qos.hk
+- **Telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)
+- **Telegram Group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
+# [Quickly Experience QOS Quotation System with PostMan](https://github.com/qos-max/quote-ocean-system/blob/main/postman/README.md)
+# Quick Start - Integration Guide
+## 1. Register for a Key
+Visit the official website to quickly register for a key:
+- **Official Website**: [https://qos.hk](https://qos.hk)
 
+After registering with your email, you will receive key-related information. **Please ensure to save it securely**, as it will be used in the following steps.
 # Table of Contents
-
-## [1. Free Quick Start - Integration Guide](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#1-quick-start---integration-guide)
-### [1.1. Register a Key](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#11-register-a-key)  
-### [1.2. Request HTTP APIs](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#12-request-http-api)  
-### [1.3. Subscribe to WebSocket Real-time Data Interfaces](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#13-subscribe-to-websocket-real-time-data-api)  
-
-## [2. Enumerations Definitions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#2-enumeration-definitions)  
-### [2.1. K-line Types](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#21-k-line-types)  
-### [2.2. Trade Directions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#22-trade-directions)  
-
-## [3. Codes and Trading Times for Various Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#3-trading-instrument-codes-and-trading-hours)  
-
-## [4. HTTP Protocol API Definitions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#4-http-protocol-api-definition)  
-### [4.0. HTTP Protocol Integration Description](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#40-http-protocol-access-description)  
-#### [4.0.1. Request Header](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#401-request-header)  
-#### [4.0.2. Limitation Description](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#402-limitations)  
-### [4.1. Register a New Key](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#41-register-a-new-key)  
-### [4.2. Get Basic Information of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#42-retrieve-basic-instrument-information)  
-### [4.3. Get Real-time Market Snapshots of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#43-get-real-time-market-snapshot-for-trading-instruments)  
-### [4.4. Get Real-time Latest Depths of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#44-get-real-time-latest-order-book-depth-for-trading-instruments)  
-### [4.5. Get Real-time Latest Trade Details of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#45-get-real-time-latest-trade-details-for-trading-instruments)  
-### [4.6. Get K-line Data of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#46-get-k-line-for-trading-instruments)  
-### [4.7. Get Historical K-line Data of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#47-get-historical-k-line-for-trading-instruments)  
-
-## [5. WebSocket Protocol API Definitions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#5-websocket-protocol-api-definition)  
-### [5.0. WebSocket Protocol Integration Description](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#50-websocket-protocol-access-instructions)  
-#### [5.0.1. Request Header](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#501-request-header)  
-#### [5.0.2. Limitation Description](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#502-limitations)  
-### [5.1. Heartbeat](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#51-heartbeat)  
-### [5.2. Subscribe to Real-time Snapshots of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#52-subscribe-to-real-time-snapshot-of-trading-instruments)  
-### [5.3. Subscribe to Real-time Trade Details of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#53-subscribe-to-real-time-trade-detail-by-price-level)  
-### [5.4. Subscribe to Real-time Market Depth of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#54-subscribe-to-real-time-order-book-depth-of-trading-instruments)  
+## 2. View [Some Enum Definitions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#2-some-enum-definitions)
+2.1. [K-line Types](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#21-k-line-types)</br>
+2.2. [Trade Directions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#22-trade-directions)</br>
+## 3. View [Codes and Trading Hours for Various Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#3-codes-and-trading-hours-for-various-trading-instruments)
+## 4. Request [HTTP Interfaces](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#4-http-protocol-interface-definitions)
+Add the key to **URL parameters** or **request headers** using the key field, then follow the parameters defined in each HTTP interface to retrieve data.</br>
+4.1. [HTTP Protocol Integration Instructions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#40-http-protocol-integration-instructions)</br>
+4.2. [Get Basic Information of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#42-get-basic-information-of-trading-instruments)</br>
+4.3. [Get Real-time Market Snapshots of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#43-get-real-time-market-snapshots-of-trading-instruments)</br>
+4.4. [Get Real-time Latest Market Depth of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#44-get-real-time-latest-market-depth-of-trading-instruments)</br>
+4.5. [Get Real-time Latest Tick-by-Tick Transaction Details of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#45-get-real-time-latest-tick-by-tick-transaction-details-of-trading-instruments)</br>
+4.6. [Get K-lines of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#46-get-k-lines-of-trading-instruments)</br>
+4.7. [Get Historical K-lines of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#47-get-historical-k-lines-of-trading-instruments)</br>
+## 5. Subscribe or Request Real-time Data via [WebSocket Interfaces](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#5-websocket-protocol-interface-definitions)
+Add the key to **URL parameters** or **request headers** using the key field, then establish a WebSocket connection, send the corresponding subscription commands, and maintain a heartbeat to receive real-time quotes.</br>
+5.1. [WebSocket Protocol Integration Instructions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#50-websocket-protocol-integration-instructions)</br>
+5.2. [Heartbeat](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#51-heartbeat)</br>
+5.3. [Subscribe to Real-time Snapshots of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#52-subscribe-to-real-time-snapshots-of-trading-instruments)</br>
+5.4. [Subscribe to Real-time Tick-by-Tick Transaction Details of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#53-subscribe-to-real-time-tick-by-tick-transaction-details-of-trading-instruments)</br>
+5.5. [Subscribe to Real-time Market Depth of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#54-subscribe-to-real-time-market-depth-of-trading-instruments)</br>
+5.6. [Subscribe to Real-time K-lines of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#55-subscribe-to-real-time-k-lines-of-trading-instruments)</br>
+5.7. [Request Real-time Snapshots of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#56-request-real-time-snapshots-of-trading-instruments)</br>
+5.8. [Request Real-time Tick-by-Tick Transaction Details of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#57-request-real-time-tick-by-tick-transaction-details-of-trading-instruments)</br>
+5.9. [Request Real-time Market Depth of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#58-request-real-time-market-depth-of-trading-instruments)</br>
+5.10. [Request Real-time K-lines of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#59-request-real-time-k-lines-of-trading-instruments)</br>
+5.11. [Request Historical K-lines of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#510-request-historical-k-lines-of-trading-instruments)</br>
+5.12. [Request Basic Information of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#511-request-basic-information-of-trading-instruments)</br>
 
 ## Contact the Author:
-- **Telegram**: [https://t.me/qos_max](https://t.me/qos_max)  
-- **Skype**: [https://join.skype.com/invite/wWXtMxKNFOYE](https://join.skype.com/invite/wWXtMxKNFOYE)
+- **Email**: support@qos.hk
+- **Telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)
+- **Telegram Group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
