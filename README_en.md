@@ -23,27 +23,27 @@ After registering with your email, you will receive key-related information. **P
 ## 3. View [Codes and Trading Hours for Various Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#3-codes-and-trading-hours-for-various-trading-instruments)
 ## 4. Request [HTTP Interfaces](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#4-http-protocol-interface-definitions)
 Add the key to **URL parameters** or **request headers** using the key field, then follow the parameters defined in each HTTP interface to retrieve data.</br>
-4.1. [HTTP Protocol Integration Instructions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#40-http-protocol-integration-instructions)</br>
-4.2. [Get Basic Information of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#42-get-basic-information-of-trading-instruments)</br>
-4.3. [Get Real-time Market Snapshots of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#43-get-real-time-market-snapshots-of-trading-instruments)</br>
-4.4. [Get Real-time Latest Market Depth of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#44-get-real-time-latest-market-depth-of-trading-instruments)</br>
-4.5. [Get Real-time Latest Tick-by-Tick Transaction Details of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#45-get-real-time-latest-tick-by-tick-transaction-details-of-trading-instruments)</br>
-4.6. [Get K-lines of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#46-get-k-lines-of-trading-instruments)</br>
-4.7. [Get Historical K-lines of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#47-get-historical-k-lines-of-trading-instruments)</br>
+4.1. [HTTP Protocol Integration Instructions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#40-http-protocol-integration-instructions)</br>  
+4.2. [Get Basic Information of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#42-get-basic-information-of-trading-products)</br>  
+4.3. [Get Real-time Market Snapshots of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#43-get-real-time-market-snapshots-of-trading-products)</br>  
+4.4. [Get Real-time Latest Market Depth of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#44-get-real-time-latest-market-depth-of-trading-products)</br>  
+4.5. [Get Real-time Latest Trade-by-Trade Details of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#45-get-real-time-latest-trade-by-trade-details-of-trading-products)</br>  
+4.6. [Get K-line Data of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#46-get-k-line-data-of-trading-products)</br>  
+4.7. [Get Historical K-line Data of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#47-get-historical-k-line-data-of-trading-products)</br>  
 ## 5. Subscribe or Request Real-time Data via [WebSocket Interfaces](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#5-websocket-protocol-interface-definitions)
 Add the key to **URL parameters** or **request headers** using the key field, then establish a WebSocket connection, send the corresponding subscription commands, and maintain a heartbeat to receive real-time quotes.</br>
-5.1. [WebSocket Protocol Integration Instructions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#50-websocket-protocol-integration-instructions)</br>
-5.2. [Heartbeat](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#51-heartbeat)</br>
-5.3. [Subscribe to Real-time Snapshots of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#52-subscribe-to-real-time-snapshots-of-trading-instruments)</br>
-5.4. [Subscribe to Real-time Tick-by-Tick Transaction Details of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#53-subscribe-to-real-time-tick-by-tick-transaction-details-of-trading-instruments)</br>
-5.5. [Subscribe to Real-time Market Depth of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#54-subscribe-to-real-time-market-depth-of-trading-instruments)</br>
-5.6. [Subscribe to Real-time K-lines of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#55-subscribe-to-real-time-k-lines-of-trading-instruments)</br>
-5.7. [Request Real-time Snapshots of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#56-request-real-time-snapshots-of-trading-instruments)</br>
-5.8. [Request Real-time Tick-by-Tick Transaction Details of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#57-request-real-time-tick-by-tick-transaction-details-of-trading-instruments)</br>
-5.9. [Request Real-time Market Depth of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#58-request-real-time-market-depth-of-trading-instruments)</br>
-5.10. [Request Real-time K-lines of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#59-request-real-time-k-lines-of-trading-instruments)</br>
-5.11. [Request Historical K-lines of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#510-request-historical-k-lines-of-trading-instruments)</br>
-5.12. [Request Basic Information of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#511-request-basic-information-of-trading-instruments)</br>
+5.1. [WebSocket Protocol Integration Instructions](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#50-websocket-protocol-integration-instructions)</br>  
+5.2. [Heartbeat](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#51-heartbeat)</br>  
+5.3. [Subscribe to Real-time Snapshots of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#52-subscribe-to-real-time-snapshots-of-trading-products)</br>  
+5.4. [Subscribe to Real-time Trade-by-Trade Details of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#53-subscribe-to-real-time-trade-by-trade-details-of-trading-products)</br>  
+5.5. [Subscribe to Real-time Market Depth of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#54-subscribe-to-real-time-market-depth-of-trading-products)</br>  
+5.6. [Subscribe to Real-time K-line Data of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#55-subscribe-to-real-time-k-line-data-of-trading-products)</br>  
+5.7. [Request Real-time Snapshots of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#56-request-real-time-snapshots-of-trading-products)</br>  
+5.8. [Request Real-time Trade-by-Trade Details of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#57-request-real-time-trade-by-trade-details-of-trading-products)</br>  
+5.9. [Request Real-time Market Depth of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#58-request-real-time-market-depth-of-trading-products)</br>  
+5.10. [Request Real-time K-line Data of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#59-request-real-time-k-line-data-of-trading-products)</br>  
+5.11. [Request Historical K-line Data of Trading Products](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#510-request-historical-k-line-data-of-trading-products)</br>  
+5.12. [Request Basic Information of Trading Instruments](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md#511-request-basic-information-of-trading-instruments)</br> 
 
 ## Contact the Author:
 - **Email**: support@qos.hk
