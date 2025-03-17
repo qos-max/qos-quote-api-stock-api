@@ -1,4 +1,4 @@
-**[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/api.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md)**
+ **[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/api.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/api_en.md)**
 # QOS行情API(Quote Ocean System)接口文档
 **quote-ocean-system系统简称"QOS行情API"，包括了港股实时API,美股实时API,A股实时API，加密货币实时报价API，数字币实时行情API,采用REST API与websocket接口形式，非常容易接入。**</br>
 **免费开源股票API、港股API、美股API、沪深股票API、A股API实时股票行情数据、加密货币实时报价数据，数字币实时行情。**</br>
@@ -1387,11 +1387,11 @@
 #### 4.6.1、请求参数
 | 参数名     | 类型   | 必填  | 描述                        |
 |------------|--------|------|-----------------------------|
-| `kline_reqs`  | array   |K线请求数组     |
-| > `c`        | string   | 股票代码，多个股票代码用逗号分隔     |
-| > `co`       | integer  | Count 请求多少根       |
-| > `a`        | integer  | 复权类型 0:不复权 1:前复权        |
-| > `kt`        | integer   | K线类型，取值参看[2.1章节](#21K线类型)K线类型定义|
+| `kline_reqs`  | array  |是 |K线请求数组     |
+| > `c`        | string   |是 | 股票代码，多个股票代码用逗号分隔     |
+| > `co`       | integer   |是| Count 请求多少根       |
+| > `a`        | integer  |是 | 复权类型 0:不复权 1:前复权        |
+| > `kt`        | integer  |是  | K线类型，取值参看[2.1章节](#21K线类型)K线类型定义|
 > [返回目录](#目录)
 #### 4.6.2、请求示例
 ```json
@@ -1575,12 +1575,12 @@
 #### 4.7.1、请求参数
 | 参数名     | 类型   | 必填  | 描述                        |
 |------------|--------|------|-----------------------------|
-| `kline_reqs`  | array   |K线请求数组     |
-| > `c`        | string   | 股票代码，多个股票代码用逗号分隔     |
-| > `co`       | integer  | Count 请求多少根       |
-| > `a`        | integer  | 复权类型 0:不复权 1:前复权        |
-| > `kt`        | integer   | K线类型，取值参看[2.1章节](#21K线类型)K线类型定义|
-| > `e`        | integer  | 请求K线的结束时间戳，单位秒                 |
+| `kline_reqs`  | array   |是 |K线请求数组     |
+| > `c`        | string   |是 | 股票代码，多个股票代码用逗号分隔     |
+| > `co`       | integer  |是 | Count 请求多少根       |
+| > `a`        | integer  |是 | 复权类型 0:不复权 1:前复权        |
+| > `kt`        | integer  |是  | K线类型，取值参看[2.1章节](#21K线类型)K线类型定义|
+| > `e`        | integer   |是| 请求K线的结束时间戳，单位秒                 |
 > [返回目录](#目录)
 #### 4.7.2、请求示例
 ```json
