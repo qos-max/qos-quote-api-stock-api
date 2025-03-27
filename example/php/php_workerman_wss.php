@@ -24,8 +24,8 @@ $worker->onWorkerStart = function() {
         // 将定时器ID保存到连接对象中，以便后续清理
         $connection->timer_id = $timer_id;
         
-		    // 发送第1个订阅
-		    $connection->send('{"type": "K","codes": ["CF:ETHUSDT,BTCUSDT"],"kt":1001}');
+	// 发送第1个订阅
+	$connection->send('{"type": "K","codes": ["CF:ETHUSDT,BTCUSDT"],"kt":1001}');
         
         // 1秒后发送第2个订阅
         Timer::add(1, function() use ($connection) {
