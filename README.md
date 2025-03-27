@@ -20,6 +20,7 @@
 ## 二、查看[一些枚举定义](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#2一些枚举定义)
 2.1、[K线类型](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#21k线类型)</br>
 2.2、[交易方向](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#22交易方向)</br>
+2.3、[美股交易时段类型](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#23美股交易时段类型)</br>
 ## 三、查看[各类交易品种的编码和交易时间](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#3各类交易品种的编码和交易时间)
 ## 四、请求[Http接口](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#4http协议接口定义)
 把key加入到**URL参数中**或者**请求头中**使用key字段填充，然后根据http的各个接口定义的参数就可以获取数据了。</br>
