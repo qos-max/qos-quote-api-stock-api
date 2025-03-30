@@ -8,8 +8,8 @@ import (
 )
 
 func main() {
-  //官网：https://qos.hk
-  //免费api key注册申请：https://qos.hk
+   	//官网：https://qos.hk
+  	//免费api key注册申请：https://qos.hk
 	url := "https://api.qos.hk/snapshot?key=your-api-key"
 	method := "POST"
 
