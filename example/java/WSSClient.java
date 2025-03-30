@@ -47,7 +47,9 @@ public class WSSClient {
                     timer.scheduleAtFixedRate(new TimerTask() {
                         @Override
                         public void run() {
-                            send("""{"type":"H"}""");
+                            send("""
+                            {"type":"H"}
+                            """);
                             System.out.println("发送心跳包");
                         }
                     }, 20000, 20000);
