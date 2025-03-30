@@ -9,6 +9,8 @@ import (
 
 func main() {
 	url := "wss://api.qos.hk/ws"
+	//官网：https://qos.hk
+        //免费api key注册申请：https://qos.hk
 	apiKey := "your-api-key" //替换你的api key
 
 	// 建立WebSocket连接
