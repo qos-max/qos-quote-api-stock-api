@@ -10,6 +10,8 @@
 - **Telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)
 - **Telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
   
+# [QOS行情API代码示例](https://github.com/qos-max/quote-ocean-system/tree/main/example)
+
 ## 1、快速开始-接入指南
 ### 1.1、注册key
 访问官网快速注册key:
