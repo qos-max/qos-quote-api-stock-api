@@ -4,11 +4,10 @@
 **免费开源股票API、港股API、美股API、沪深股票API、A股API实时股票行情数据、加密货币实时报价数据，数字币实时行情。**</br>
 **QOS行情报价系统目前提供：全港，全美，沪深等股票和加密货币（数字币）的实时报价，实时K线，历史K线数据等，欢迎免费试用及联系作者,现提供免费试用对接。**
 - **官网**：[https://qos.hk](https://qos.hk)
-- **更新时间**：2025-3-31
+- **更新时间**：2025-6-3
 ## 联系作者：
 - **Email**: support@qos.hk
 - **Telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)
-- **Telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
 ## [QOS行情API代码示例](https://github.com/qos-max/quote-ocean-system/tree/main/example)
 ## [QOS行情API-GO语言SDK](https://github.com/qos-max/qos-quote-api-go-sdk)
 ## [QOS行情API-Python语言SDK](https://github.com/qos-max/qos-quote-api-python-sdk)
@@ -34,6 +33,8 @@
 4.5、[获取交易品种的实时最新逐笔成交明细](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#45获取交易品种的实时最新逐笔成交明细)</br>
 4.6、[获取交易品种的K线](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#46获取交易品种的K线)</br>
 4.7、[获取交易品种的K线-历史](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#47获取交易品种的K线历史)</br>
+4.8、[获取市场交易日历](https://github.com/qos-max/qos-quote-api-stock-api/blob/main/api.md#48%E8%8E%B7%E5%8F%96%E5%B8%82%E5%9C%BA%E4%BA%A4%E6%98%93%E6%97%A5%E5%8E%86)</br>
+4.9、[获取产品列表](https://github.com/qos-max/qos-quote-api-stock-api/blob/main/api.md#49%E8%8E%B7%E5%8F%96%E4%BA%A7%E5%93%81%E5%88%97%E8%A1%A8)</br>
 ## 五、通过[Webscoket订阅或者请求实时数据接口](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#5websocket协议接口定义)
 把key加入到**URL参数中**或者**请求头中**使用key字段填充，然后建立websocket连接，发送相应的订阅命令，并保持心跳就可以得到实时报价了</br>
 5.0、[websocket协议接入说明](https://github.com/qos-max/quote-ocean-system/blob/main/api.md#50websocket协议接入说明)</br>
