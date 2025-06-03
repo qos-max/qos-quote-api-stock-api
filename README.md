@@ -1,8 +1,8 @@
 **[简体中文](https://github.com/qos-max/quote-ocean-system/blob/main/README.md) | [English](https://github.com/qos-max/quote-ocean-system/blob/main/README_en.md)**
 # QOS行情API(Quote Ocean System)-欢迎对接使用
-**quote-ocean-system系统简称"QOS行情API"，包括了港股实时API,美股实时API,A股实时API，加密货币实时报价API，数字币实时行情API,采用REST API与websocket接口形式，非常容易接入。**</br>
-**免费开源股票API、港股API、美股API、沪深股票API、A股API实时股票行情数据、加密货币实时报价数据，数字币实时行情。**</br>
-**QOS行情报价系统目前提供：全港，全美，沪深等股票和加密货币（数字币）的实时报价，实时K线，历史K线数据等，欢迎免费试用及联系作者,现提供免费试用对接。**
+**quote-ocean-system系统简称"QOS行情API"，包括了港股实时API,美股实时API,A股实时API，加密货币实时报价API，数字币实时行情API,外汇API，贵金属API,黄金API，白银API，大宗商品API，能源API,采用REST API与websocket接口形式，非常容易接入。**</br>
+**免费开源股票API、港股API、美股API、沪深股票API、A股API实时股票行情数据、加密货币实时报价数据，数字币实时行情,外汇行情数据，贵金属行情数据,黄金行情报价，白银行情报价，大宗商品行情数据，能源行情数据**</br>
+**QOS行情报价系统目前提供：全港，全美，沪深等股票和加密货币（数字币），外汇，贵金属，大宗商品，黄金，白银，能源等的实时报价，实时K线，历史K线数据等，欢迎免费试用及联系作者,现提供免费试用对接。**
 - **官网**：[https://qos.hk](https://qos.hk)
 - **更新时间**：2025-6-3
 ## 联系作者：
