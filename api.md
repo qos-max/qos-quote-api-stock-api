@@ -91,6 +91,9 @@
 | `SZ`  | A股深圳 | UTC+8 上午交易时段：9:30 - 11:30 下午交易时段：13:00 - 15:00 |
 | `SH`  | A股上海 | UTC+8 上午交易时段：9:30 - 11:30 下午交易时段：13:00 - 15:00 |
 | `CF`  | 加密货币永续合约 | 24小时 |
+| `FX`  | 外汇 | 夏令时(UTC+8)：周一5:00-周六05:00</br>冬令时(UTC+8)：周一6:00-周六06:00</br>夏令时（通常从3月的第二个星期日到11月的第一个星期日） </br>冬令时（通常从11月的第一个星期日到3月的第二个星期日） |
+| `IX`  | 指数 | 跟随各指数所对应的交易所 |
+| `CM`  | 黄金，白银，大宗商品，能源 | 夏令时(UTC+8)：周一5:00-周六05:00</br>冬令时(UTC+8)：周一6:00-周六06:00</br>夏令时（通常从3月的第二个星期日到11月的第一个星期日） </br>冬令时（通常从11月的第一个星期日到3月的第二个星期日） |
 > [返回目录](#目录)
 ---
 ## 4、http协议接口定义
@@ -136,7 +139,10 @@
         "HK:700,9988",
         "SH:600519,600518",
         "SZ:000001,002594",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ]
 }
 ```
@@ -298,7 +304,10 @@
         "HK:700,9988",
         "SH:600519,600518",
         "SZ:000001,002594",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ]
 }
 ```
@@ -515,7 +524,10 @@
         "HK:700,9988",
         "SH:600519,600518",
         "SZ:000001,002594",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ]
 }
 ```
@@ -1298,7 +1310,10 @@
         "HK:700,9988",
         "SH:600519,600518",
         "SZ:000001,002594",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ],
     "count": 1
 }
@@ -1603,14 +1618,21 @@
     "kline_reqs": [
         {
             "c": "CF:BTCUSDT",
-            "e": 1741959608,
+            "e": 1767110400,
             "co": 1,
             "a": 0,
             "kt": 1001
         },
         {
             "c": "US:AAPL",
-            "e": 1741959608,
+            "e": 1767110400,
+            "co": 1,
+            "a": 0,
+            "kt": 1001
+        },
+        {
+            "c": "CM:XAUUSD",
+            "e": 1767110400,
             "co": 1,
             "a": 0,
             "kt": 1001
@@ -1861,7 +1883,10 @@
         "HK:700,9988",
         "SH:600519,688981",
         "SZ:002594,000001",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ],
     "reqid":1
 }
@@ -1886,7 +1911,10 @@
         "HK:700,9988",
         "SH:600519,688981",
         "SZ:002594,000001",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ],
     "reqid":1
 }
@@ -1953,7 +1981,10 @@
         "HK:700,9988",
         "SH:600519,688981",
         "SZ:002594,000001",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ],
     "reqid":1
 }
@@ -1978,7 +2009,10 @@
         "HK:700,9988",
         "SH:600519,688981",
         "SZ:002594,000001",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ],
     "reqid":1
 }
@@ -2034,7 +2068,10 @@
         "HK:700,9988",
         "SH:600519,688981",
         "SZ:002594,000001",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ],
     "reqid":1
 }
@@ -2059,7 +2096,10 @@
         "HK:700,9988",
         "SH:600519,688981",
         "SZ:002594,000001",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ],
     "reqid":1
 }
@@ -2210,7 +2250,10 @@
         "HK:700,9988",
         "SH:600519,688981",
         "SZ:002594,000001",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ],
     "reqid":1
 }
@@ -2428,7 +2471,10 @@
         "HK:700,9988",
         "SH:600519,688981",
         "SZ:002594,000001",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ],
     "reqid":1,
     "count":1
@@ -2493,7 +2539,7 @@
 | `codes`    | code列表，具体传入方式请看下面示例 |
 | `reqid`    | integer类型。可选。请求id，由客户端传入，服务器会原值返回，用于客户端自己索引一条唯一的请求和返回。客户端结合自身需要考虑是否传入合适的值。 |
 > [返回目录](#目录)
-#### 5.8.2、订阅命令示例
+#### 5.8.2、请求命令示例
 ```json
 {
     "type": "RD",
@@ -2502,7 +2548,10 @@
         "HK:700,9988",
         "SH:600519,688981",
         "SZ:002594,000001",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ],
     "reqid":1
 }
@@ -3290,6 +3339,12 @@
             "co": 2,
             "a": 0,
             "kt": 1001
+        },
+        {
+            "c": "CM:XAUUSD",
+            "co": 2,
+            "a": 0,
+            "kt": 1001
         }
     ],
     "reqid":1
@@ -3390,7 +3445,14 @@
     "kline_reqs": [
         {
             "c": "CF:BTCUSDT,ETHUSDT",
-            "e": 1742047133,
+            "e": 1767110400,
+            "co": 2,
+            "a": 0,
+            "kt": 1001
+        },
+        {
+            "c": "CM:XAUUSD",
+            "e": 1767110400,
             "co": 2,
             "a": 0,
             "kt": 1001
@@ -3492,7 +3554,10 @@
         "HK:700,9988",
         "SH:600519,688981",
         "SZ:002594,000001",
-        "CF:BTCUSDT,ETHUSDT"
+        "CF:BTCUSDT,ETHUSDT",
+        "FX:USDJPY,EURUSD",
+        "IX:JPN225",
+        "CM:XAUUSD,XAGUSD"
     ],
     "reqid":1
 }
