@@ -53,4 +53,3 @@
 ## 联系作者：
 - **Email**: support@qos.hk
 - **Telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)
-- **Telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
