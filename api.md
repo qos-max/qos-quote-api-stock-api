@@ -8,7 +8,6 @@
 ## 联系作者：
 - **Email**: support@qos.hk
 - **Telegram**: [https://t.me/stock_quote_api](https://t.me/stock_quote_api)
-- **Telegram group**: [https://t.me/stock_quote_api_hk_us_ashre_api](https://t.me/stock_quote_api_hk_us_ashre_api)
   
 # [QOS行情API代码示例](https://github.com/qos-max/quote-ocean-system/tree/main/example)
 
